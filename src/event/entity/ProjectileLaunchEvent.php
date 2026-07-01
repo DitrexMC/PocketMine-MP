@@ -43,4 +43,8 @@ class ProjectileLaunchEvent extends EntityEvent implements Cancellable{
 	public function getEntity(){
 		return $this->entity;
 	}
+
+	public function setEntity(Projectile $entity) : void{
+		$this->entity = $entity;
+	}
 }
